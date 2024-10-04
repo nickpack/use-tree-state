@@ -40,7 +40,7 @@ module.exports = {
   slowTestThreshold: 5,
 
   // The test environment that will be used for testing, need jsdom for enzume mounting a component
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom',
 
   // The glob patterns Jest uses to detect test files
   testMatch: [
@@ -54,9 +54,6 @@ module.exports = {
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
-
-  // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
-  timers: 'real',
 
   // Indicates whether each individual test should be reported during the run
   verbose: true,
